@@ -2,14 +2,16 @@
 
 ## MeteoHub
 
-Ogni gruppo definisce un titolo progetto (< 100 caratteri) e una descrizione( <500 caratteri)
+MeteoHub is PornHub for Meteo
 
 ## Partecipanti
-Elenco partecipanti
+RemixHeart
+Avraj Singh
+Mattia Cherubini
 
 ## Ruoli
 
-* PROJECT_MANAGER = 
+* PROJECT_MANAGER = RemixHeart
 * DOCUMENTAZIONE = 
 * CSS = 
 
