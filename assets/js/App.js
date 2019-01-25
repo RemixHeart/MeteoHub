@@ -47,7 +47,6 @@ class App extends React.Component {
         let textResults = document.querySelector(".textResults");
         let mapBtt = document.querySelector(".bttResults");
 
-        //<i className="wu wu-white wu-25 wu-rain"></i>
         if (city && country) {
             let imageName = "";
             if (data.weather[0].description.includes("rain")){
