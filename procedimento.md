@@ -1,4 +1,4 @@
-#Descrizione del procedimento per realizzare il programma MeteoHub.
+# Descrizione del procedimento per realizzare il programma MeteoHub.
 
 Dopo averci introdotto la libreria di JavaScripts REACT , il professore ci ha assegnato in diversi gruppi per la realizzazione di una
 applicazione in React mediante l' uso di chiamate a siti esterni attraverso delle API. In una prima lezione ci siamo consultati su quale
