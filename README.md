@@ -2,7 +2,7 @@
 
 ## MeteoHub
 
-MeteoHub is a React.js weather web app, it was made possible by [Prof. Andrea Pollini](https://github.com/ProfAndreaPollini) our lovely anonimous professor who introduced us to the React library, [OpenWeatherMap](https://openweathermap.org/) for the api used & [buche](https://github.com/buche) for his nice [map](https://github.com/buche/leaflet-openweathermap) :)
+MeteoHub is a React.js weather web app, it was made possible by [Prof. Andrea Pollini](https://github.com/ProfAndreaPollini), our lovely anonimous professor who introduced us to the React library, [OpenWeatherMap](https://openweathermap.org/) for the api used & [buche](https://github.com/buche) for his nice [map](https://github.com/buche/leaflet-openweathermap) :)
 
 ## Partecipanti
 Sery Franck
