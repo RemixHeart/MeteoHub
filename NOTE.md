@@ -1,15 +1,14 @@
 # User Story
 
-Una user story è una frase che ha la forma
-
-COME <RUOLO> VOGLIO <COSA>
-
-Come utente voglio visualizzare la lista articoli
-
+Come utente voglio poter inserire la località ed ottenere le informazioni del meteo
+Come utente voglio poter visualizzare anche la mappa della città desiderata
+Come utente voglio che la risposta arrivi nel minor tempo possibile
+Come utente voglio poter ricevere risultati apprezzabili e precisi
+Come utente voglio poter accedere semplicemente all' applicazione
 
 # CASI D'USO
 
-Diagramma
+
 
 
 # DIAGRAMMI DI SEQUENZA
