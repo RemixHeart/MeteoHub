@@ -62,7 +62,6 @@ class App extends React.Component {
         //controls if the country and city camps have been filled
         if (city && country) {
             let imageName = "";
-
             //series of ifs to which checks the response before setting the images and color shown
             if (data.weather[0].description.includes("rain")){
                 imageName = "wu wu-white wu-128 wu-rain";
