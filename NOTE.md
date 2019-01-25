@@ -10,9 +10,9 @@
 # CASI D'USO
 
 * UTENTE =====> inserimento città e nazione ==========> Sistema esegue
-         =====> scelta se visualizzare meteo o mappa ==>  Sistema esegue
+       * =====> scelta se visualizzare meteo o mappa ==>  Sistema esegue
 * SISTEMA =====> presi gli input determina se sono validi
-          =====> fornisce i risultati 
+        * =====> fornisce i risultati 
 
 # DIAGRAMMI DI SEQUENZA
 
