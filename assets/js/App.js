@@ -13,10 +13,13 @@ const Weather = props => (
         <div className="imgResults">
             { props.image && <i className={ props.image }></i> }
         </div>
-        <!-- button which calls the map thru an uri, coordinates:
+
+        {
+        /*button which calls the map thru an uri, coordinates:
           zoom: always 9,
-          longitude & latitude both taken from the api -->
-          
+          longitude & latitude both taken from the api */
+        }
+
         <input type="submit"
                className="bttResults"
                onClick={(e) => window.location = 'assets/owm/example/index.html?zoom=9&lon='+props.lon+'&lat='+props.lat}
@@ -54,6 +57,7 @@ class App extends React.Component {
         div.style.margin = "0 auto";
         let textResults = document.querySelector(".textResults");
         let mapBtt = document.querySelector(".bttResults");
+        let resultsDiv = document.querySelector(".results");
 
         //controls if the country and city camps have been filled
         if (city && country) {
@@ -85,6 +89,7 @@ class App extends React.Component {
                 textResults.style.color = "rgb(40, 103, 199)";
             }
             mapBtt.style.visibility = "visible"; //makes the map button visible
+            resultsDiv.style.opacity = 1; //render the results div visible
             //stores the values gotten from the api and the imageName to the state
           this.setState({
                 temperature: data.main.temp,
@@ -124,7 +129,9 @@ class App extends React.Component {
                         <input type="text" name="country" placeholder="Country..." />
                         <input type="submit" className="button bot-left" value="Get Weather"/>
                     </form>
-                    <!-- this passes the app state values to the weather constant -->
+                    {
+                    /* this passes the app state values to the weather constant */
+                    }
                     <Weather
                         temperature={this.state.temperature}
                         city={this.state.city}
