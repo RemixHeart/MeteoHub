@@ -14,3 +14,5 @@ invece permette di visualizzare la mappa della città in base alle sue coordinat
 diversi livelli della mapppa : dalla cartina politica a quela con i dati relativi alle varie temperature , umidità , ... .
 Per testare che l' obiettivo primario dell' applicazione , ovvero quello di fornire dati corretti e precisi  fosse stato adempito , 
 ci è bastato visualizzare i dati visitando un sito di previsioni meteo
+
+Ringraziamenti a [buche](https://github.com/buche) per la sua [leaflet map repository](https://github.com/buche/leaflet-openweathermap) 
