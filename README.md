@@ -5,15 +5,18 @@
 MeteoHub is an amateur meteo web app
 
 ## Partecipanti
-RemixHeart
+Sery Franck
 Avraj Singh
 Mattia Cherubini
 
 ## Ruoli
 
-* PROJECT_MANAGER = RemixHeart
-* DOCUMENTAZIONE = 
-* CSS = 
+* PROJECT_MANAGER = Sery Franck
+* DOCUMENTAZIONE = Mattia Cherubini
+* MAPPA = Avraj Singh
+* METEO = Mattia Cherubini
+* CSS = Sery Franck
+* HTML = Sery Franck
 
 ## Regolamento
 * Ogni gruppo consegnerà il link ad un repository GIT che sarà un fork di questo progetto.
