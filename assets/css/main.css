@@ -4,9 +4,10 @@ body, form, main {
 
 body {
     font-family: 'Tillana', cursive;
-    /*background-color: #262626;*/
-    background: #f1c40f radial-gradient(#f1c40f, #f39c12);
+    background: url("../img/wall.jpg") no-repeat fixed left center;
     color: #f7f7f7;
+    overflow: hidden;
+
 }
 
 .called {
@@ -25,43 +26,11 @@ div {
     border:0;
 }
 
-.meteoAnimLeft, .form, .meteoAnimRight {
-    display:inline-block;
+.form {
+    width: 50%;
     height:100%;
+    margin: 5% auto;
 }
-
-.meteoAnimLeft {
-    width: 25%;
-    background-color: #262626;
-}
-.form {
-    width: 50%;
-    /*background-color:green;*/
-    margin: 100px auto;
-}
-.meteoAnimRight {
-    width: 25%;
-    background-color: #262626;
-}
-
-
-/*.meteoAnimLeft {
-    background-color: #262626;
-    width: 25%;
-    float: left;
-}
-.form {
-    width: 50%;
-    height: 100%;
-    margin: 100px auto;
-}
-
-.meteoAnimRight {
-    background-color: #262626;
-    width: 25%;
-    float: right;
-}*/
-
 
 .search {
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
@@ -102,11 +71,17 @@ h1 {
     font-weight: normal;
     font-size: 400%;
 }
-  
+
 .fas {
     background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#da1b60));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.results {
+	opacity: 0;
+	-webkit-transition: visibility 5s; /* Safari */
+  	transition: visibility 5s, opacity 0.5s linear;
 }
 
 .textResults {
