@@ -2,7 +2,7 @@
 
 ## MeteoHub
 
-MeteoHub is PornHub for Meteo
+MeteoHub is an amateur meteo web app
 
 ## Partecipanti
 RemixHeart
