@@ -1,4 +1,6 @@
 
+
+//Little Constant for showing the result of the api, the parameters are self-explanatory
 const Weather = props => (
     <div className="results">
         <div className="textResults">
@@ -11,6 +13,10 @@ const Weather = props => (
         <div className="imgResults">
             { props.image && <i className={ props.image }></i> }
         </div>
+        /*button which calls the map thru an uri, coordinates:
+          zoom: always 9,
+          longitude & latitude both taken from the api
+        */
         <input type="submit"
                className="bttResults"
                onClick={(e) => window.location = 'assets/owm/example/index.html?zoom=9&lon='+props.lon+'&lat='+props.lat}
@@ -33,7 +39,7 @@ class App extends React.Component {
             error: undefined,
             image: undefined
         }
-    
+
 
     searchWeather = async (e) => {
         e.preventDefault();
@@ -100,7 +106,7 @@ class App extends React.Component {
           });
         }
       }
-    
+
     render() {
         return (
             <div  className="container">
