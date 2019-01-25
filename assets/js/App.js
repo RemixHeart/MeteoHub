@@ -13,10 +13,10 @@ const Weather = props => (
         <div className="imgResults">
             { props.image && <i className={ props.image }></i> }
         </div>
-        /*button which calls the map thru an uri, coordinates:
+        <!-- button which calls the map thru an uri, coordinates:
           zoom: always 9,
-          longitude & latitude both taken from the api
-        */
+          longitude & latitude both taken from the api -->
+          
         <input type="submit"
                className="bttResults"
                onClick={(e) => window.location = 'assets/owm/example/index.html?zoom=9&lon='+props.lon+'&lat='+props.lat}
@@ -40,11 +40,13 @@ class App extends React.Component {
             image: undefined
         }
 
-
+//do-it-all function, it fetches the data thru the api call then save them in the app state
     searchWeather = async (e) => {
         e.preventDefault();
+        //city & country are attributes both taken from the form
         const city = e.target.elements.city.value;
         const country = e.target.elements.country.value;
+        //api call to the OpenWeatherMap server, it takes both the city & country values
         const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=fb8ae8d5470a016c29a257575bad4fd2&units=metric`);
         const data = await api_call.json();
         console.log(data);
@@ -53,8 +55,11 @@ class App extends React.Component {
         let textResults = document.querySelector(".textResults");
         let mapBtt = document.querySelector(".bttResults");
 
+        //controls if the country and city camps have been filled
         if (city && country) {
             let imageName = "";
+
+            //series of ifs to which checks the response before setting the images and color shown
             if (data.weather[0].description.includes("rain")){
                 imageName = "wu wu-white wu-128 wu-rain";
                 textResults.style.color = "rgb(40, 133, 199)";
@@ -79,7 +84,8 @@ class App extends React.Component {
                 imageName = "wu wu-white wu-128 wu-snow";
                 textResults.style.color = "rgb(40, 103, 199)";
             }
-            mapBtt.style.visibility = "visible";
+            mapBtt.style.visibility = "visible"; //makes the map button visible
+            //stores the values gotten from the api and the imageName to the state
           this.setState({
                 temperature: data.main.temp,
                 city: data.name,
@@ -93,6 +99,7 @@ class App extends React.Component {
           });
 
         } else {
+          //stores the default values into the state in case there's an error
           this.setState({
                 temperature: undefined,
                 city: undefined,
@@ -106,14 +113,10 @@ class App extends React.Component {
           });
         }
       }
-
+      //renders the html section
     render() {
         return (
             <div  className="container">
-                <div className="meteoAnimLeft">
-                    <div data-include="rain.html"></div>
-                </div>
-
                 <div className="form">
                     <h1>MeteoHub<span id="toggle"><i className="fas fa-sun"></i></span></h1>
                     <form onSubmit={this.searchWeather}>
@@ -121,6 +124,7 @@ class App extends React.Component {
                         <input type="text" name="country" placeholder="Country..." />
                         <input type="submit" className="button bot-left" value="Get Weather"/>
                     </form>
+                    <!-- this passes the app state values to the weather constant -->
                     <Weather
                         temperature={this.state.temperature}
                         city={this.state.city}
@@ -133,11 +137,6 @@ class App extends React.Component {
                         image={this.state.image}
                     />
                 </div>
-
-                <div className="meteoAnimRight">
-
-                </div>
-
             </div>
         );
 	}
