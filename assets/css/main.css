@@ -1,0 +1,130 @@
+body, form, main {
+    height: 100%;
+}
+
+body {
+    font-family: 'Tillana', cursive;
+    /*background-color: #262626;*/
+    background: #f1c40f radial-gradient(#f1c40f, #f39c12);
+    color: #f7f7f7;
+}
+
+.called {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#app, .container{
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.meteoAnimLeft, .form, .meteoAnimRight {
+    display:inline-block;
+    height:100%;
+}
+
+.meteoAnimLeft {
+    width: 25%;
+    background-color: #262626;
+}
+.form {
+    width: 50%;
+    /*background-color:green;*/
+    margin: 100px auto;
+}
+.meteoAnimRight {
+    width: 25%;
+    background-color: #262626;
+}
+
+
+/*.meteoAnimLeft {
+    background-color: #262626;
+    width: 25%;
+    float: left;
+}
+.form {
+    width: 50%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+.meteoAnimRight {
+    background-color: #262626;
+    width: 25%;
+    float: right;
+}*/
+
+
+.search {
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+input {
+    font-family: 'Tillana', cursive;
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 50%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #262626;
+    border: 3px solid rgba(0, 0, 0, 0)
+
+}
+
+input[type="text"]:focus {
+    background: #fff;
+    border: 3px solid #262626;
+    outline: none;
+}
+
+.button{
+    background-color: #262626;
+    color: #f7f7f7;
+    width: 100%;
+    border: 3px solid rgba(247, 247, 247, 0);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    margin: 0 0;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-size: 400%;
+}
+  
+.fas {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#da1b60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textResults {
+    margin: auto auto;
+    float: right
+}
+
+.imgResults i {
+    margin: auto auto;
+    float: left
+}
+
+.bttResults {
+    visibility: hidden;
+    margin: auto auto;
+    background-color: #262626;
+    color: #f7f7f7;
+    width: 100%;
+    border: 3px solid rgba(247, 247, 247, 0);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
